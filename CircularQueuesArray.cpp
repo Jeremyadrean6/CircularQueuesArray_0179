@@ -84,5 +84,15 @@ public:
 
         cout << "\nElements in the queue are...\n";
 
+        // Jika FRONT_positif,, iterasi dari FRONT hingga rear
+        if (FRONT_position <= REAR_position)
+        {
+            while (FRONT_position <= REAR_position)
+            {
+                cout << queue_array[FRONT_position] << " ";
+                FRONT_position++;
+            }
+        }
+        else
     }
-}  
+}
